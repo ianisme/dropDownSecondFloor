@@ -1,0 +1,851 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0000000004C0 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 0000000000E0 /* MASCompositeConstraint.m */; };
+		0000000004D0 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000000110 /* MASConstraint.m */; };
+		0000000004E0 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000000130 /* MASConstraintMaker.m */; };
+		0000000004F0 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000000150 /* MASLayoutConstraint.m */; };
+		000000000500 /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000000190 /* MASViewAttribute.m */; };
+		000000000510 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 0000000001B0 /* MASViewConstraint.m */; };
+		000000000520 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0000000001D0 /* NSArray+MASAdditions.m */; };
+		000000000530 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000000200 /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		000000000540 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000000220 /* View+MASAdditions.m */; };
+		000000000550 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000000250 /* ViewController+MASAdditions.m */; };
+		000000000560 /* MASCompositeConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 0000000000D0 /* MASCompositeConstraint.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000000570 /* MASConstraint+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 0000000000F0 /* MASConstraint+Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000000580 /* MASConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000100 /* MASConstraint.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000000590 /* MASConstraintMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000120 /* MASConstraintMaker.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0000000005A0 /* MASLayoutConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000140 /* MASLayoutConstraint.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0000000005B0 /* Masonry.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000160 /* Masonry.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0000000005C0 /* MASUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000170 /* MASUtilities.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0000000005D0 /* MASViewAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000180 /* MASViewAttribute.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0000000005E0 /* MASViewConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 0000000001A0 /* MASViewConstraint.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0000000005F0 /* NSArray+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 0000000001C0 /* NSArray+MASAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000000600 /* NSArray+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 0000000001E0 /* NSArray+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000000610 /* NSLayoutConstraint+MASDebugAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 0000000001F0 /* NSLayoutConstraint+MASDebugAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000000620 /* View+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000210 /* View+MASAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000000630 /* View+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000230 /* View+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000000640 /* ViewController+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000240 /* ViewController+MASAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000000690 /* Masonry-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000000680 /* Masonry-dummy.m */; };
+		000000000720 /* NSData+ImageContentType.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000000280 /* NSData+ImageContentType.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		000000000730 /* SDImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 0000000002A0 /* SDImageCache.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		000000000740 /* SDWebImageCompat.m in Sources */ = {isa = PBXBuildFile; fileRef = 0000000002C0 /* SDWebImageCompat.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		000000000750 /* SDWebImageDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 0000000002E0 /* SDWebImageDecoder.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		000000000760 /* SDWebImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000000300 /* SDWebImageDownloader.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		000000000770 /* SDWebImageDownloaderOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000000320 /* SDWebImageDownloaderOperation.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		000000000780 /* SDWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000000340 /* SDWebImageManager.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		000000000790 /* SDWebImagePrefetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000000370 /* SDWebImagePrefetcher.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		0000000007A0 /* UIButton+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000000390 /* UIButton+WebCache.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		0000000007B0 /* UIImage+GIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 0000000003B0 /* UIImage+GIF.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		0000000007C0 /* UIImage+MultiFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 0000000003D0 /* UIImage+MultiFormat.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		0000000007D0 /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 0000000003F0 /* UIImageView+HighlightedWebCache.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		0000000007E0 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000000410 /* UIImageView+WebCache.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		0000000007F0 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000000430 /* UIView+WebCacheOperation.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		000000000800 /* NSData+ImageContentType.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000270 /* NSData+ImageContentType.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000000810 /* SDImageCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000290 /* SDImageCache.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000000820 /* SDWebImageCompat.h in Headers */ = {isa = PBXBuildFile; fileRef = 0000000002B0 /* SDWebImageCompat.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000000830 /* SDWebImageDecoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 0000000002D0 /* SDWebImageDecoder.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000000840 /* SDWebImageDownloader.h in Headers */ = {isa = PBXBuildFile; fileRef = 0000000002F0 /* SDWebImageDownloader.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000000850 /* SDWebImageDownloaderOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000310 /* SDWebImageDownloaderOperation.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000000860 /* SDWebImageManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000330 /* SDWebImageManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000000870 /* SDWebImageOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000350 /* SDWebImageOperation.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000000880 /* SDWebImagePrefetcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000360 /* SDWebImagePrefetcher.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000000890 /* UIButton+WebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000380 /* UIButton+WebCache.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0000000008A0 /* UIImage+GIF.h in Headers */ = {isa = PBXBuildFile; fileRef = 0000000003A0 /* UIImage+GIF.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0000000008B0 /* UIImage+MultiFormat.h in Headers */ = {isa = PBXBuildFile; fileRef = 0000000003C0 /* UIImage+MultiFormat.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0000000008C0 /* UIImageView+HighlightedWebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 0000000003E0 /* UIImageView+HighlightedWebCache.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0000000008D0 /* UIImageView+WebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000400 /* UIImageView+WebCache.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0000000008E0 /* UIView+WebCacheOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000420 /* UIView+WebCacheOperation.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000000930 /* SDWebImage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000000920 /* SDWebImage-dummy.m */; };
+		000000000A20 /* Pods-dropDownSecondFloor-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000000A10 /* Pods-dropDownSecondFloor-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		000000000A30 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 000000000000 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 000000000440;
+			remoteInfo = Masonry;
+		};
+		000000000A50 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 000000000000 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0000000006A0;
+			remoteInfo = SDWebImage;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0000000000C0 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		0000000000D0 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASCompositeConstraint.h; path = Masonry/MASCompositeConstraint.h; sourceTree = "<group>"; };
+		0000000000E0 /* MASCompositeConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASCompositeConstraint.m; path = Masonry/MASCompositeConstraint.m; sourceTree = "<group>"; };
+		0000000000F0 /* MASConstraint+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MASConstraint+Private.h"; path = "Masonry/MASConstraint+Private.h"; sourceTree = "<group>"; };
+		000000000100 /* MASConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraint.h; path = Masonry/MASConstraint.h; sourceTree = "<group>"; };
+		000000000110 /* MASConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraint.m; path = Masonry/MASConstraint.m; sourceTree = "<group>"; };
+		000000000120 /* MASConstraintMaker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraintMaker.h; path = Masonry/MASConstraintMaker.h; sourceTree = "<group>"; };
+		000000000130 /* MASConstraintMaker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraintMaker.m; path = Masonry/MASConstraintMaker.m; sourceTree = "<group>"; };
+		000000000140 /* MASLayoutConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASLayoutConstraint.h; path = Masonry/MASLayoutConstraint.h; sourceTree = "<group>"; };
+		000000000150 /* MASLayoutConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASLayoutConstraint.m; path = Masonry/MASLayoutConstraint.m; sourceTree = "<group>"; };
+		000000000160 /* Masonry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Masonry.h; path = Masonry/Masonry.h; sourceTree = "<group>"; };
+		000000000170 /* MASUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASUtilities.h; path = Masonry/MASUtilities.h; sourceTree = "<group>"; };
+		000000000180 /* MASViewAttribute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewAttribute.h; path = Masonry/MASViewAttribute.h; sourceTree = "<group>"; };
+		000000000190 /* MASViewAttribute.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewAttribute.m; path = Masonry/MASViewAttribute.m; sourceTree = "<group>"; };
+		0000000001A0 /* MASViewConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewConstraint.h; path = Masonry/MASViewConstraint.h; sourceTree = "<group>"; };
+		0000000001B0 /* MASViewConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewConstraint.m; path = Masonry/MASViewConstraint.m; sourceTree = "<group>"; };
+		0000000001C0 /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASAdditions.h"; path = "Masonry/NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		0000000001D0 /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+MASAdditions.m"; path = "Masonry/NSArray+MASAdditions.m"; sourceTree = "<group>"; };
+		0000000001E0 /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASShorthandAdditions.h"; path = "Masonry/NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		0000000001F0 /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+MASDebugAdditions.h"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		000000000200 /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+MASDebugAdditions.m"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
+		000000000210 /* View+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASAdditions.h"; path = "Masonry/View+MASAdditions.h"; sourceTree = "<group>"; };
+		000000000220 /* View+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "View+MASAdditions.m"; path = "Masonry/View+MASAdditions.m"; sourceTree = "<group>"; };
+		000000000230 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASShorthandAdditions.h"; path = "Masonry/View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		000000000240 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ViewController+MASAdditions.h"; path = "Masonry/ViewController+MASAdditions.h"; sourceTree = "<group>"; };
+		000000000250 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ViewController+MASAdditions.m"; path = "Masonry/ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		000000000270 /* NSData+ImageContentType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+ImageContentType.h"; path = "SDWebImage/NSData+ImageContentType.h"; sourceTree = "<group>"; };
+		000000000280 /* NSData+ImageContentType.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+ImageContentType.m"; path = "SDWebImage/NSData+ImageContentType.m"; sourceTree = "<group>"; };
+		000000000290 /* SDImageCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageCache.h; path = SDWebImage/SDImageCache.h; sourceTree = "<group>"; };
+		0000000002A0 /* SDImageCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageCache.m; path = SDWebImage/SDImageCache.m; sourceTree = "<group>"; };
+		0000000002B0 /* SDWebImageCompat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageCompat.h; path = SDWebImage/SDWebImageCompat.h; sourceTree = "<group>"; };
+		0000000002C0 /* SDWebImageCompat.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageCompat.m; path = SDWebImage/SDWebImageCompat.m; sourceTree = "<group>"; };
+		0000000002D0 /* SDWebImageDecoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageDecoder.h; path = SDWebImage/SDWebImageDecoder.h; sourceTree = "<group>"; };
+		0000000002E0 /* SDWebImageDecoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDecoder.m; path = SDWebImage/SDWebImageDecoder.m; sourceTree = "<group>"; };
+		0000000002F0 /* SDWebImageDownloader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageDownloader.h; path = SDWebImage/SDWebImageDownloader.h; sourceTree = "<group>"; };
+		000000000300 /* SDWebImageDownloader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDownloader.m; path = SDWebImage/SDWebImageDownloader.m; sourceTree = "<group>"; };
+		000000000310 /* SDWebImageDownloaderOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageDownloaderOperation.h; path = SDWebImage/SDWebImageDownloaderOperation.h; sourceTree = "<group>"; };
+		000000000320 /* SDWebImageDownloaderOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDownloaderOperation.m; path = SDWebImage/SDWebImageDownloaderOperation.m; sourceTree = "<group>"; };
+		000000000330 /* SDWebImageManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageManager.h; path = SDWebImage/SDWebImageManager.h; sourceTree = "<group>"; };
+		000000000340 /* SDWebImageManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageManager.m; path = SDWebImage/SDWebImageManager.m; sourceTree = "<group>"; };
+		000000000350 /* SDWebImageOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageOperation.h; path = SDWebImage/SDWebImageOperation.h; sourceTree = "<group>"; };
+		000000000360 /* SDWebImagePrefetcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImagePrefetcher.h; path = SDWebImage/SDWebImagePrefetcher.h; sourceTree = "<group>"; };
+		000000000370 /* SDWebImagePrefetcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImagePrefetcher.m; path = SDWebImage/SDWebImagePrefetcher.m; sourceTree = "<group>"; };
+		000000000380 /* UIButton+WebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+WebCache.h"; path = "SDWebImage/UIButton+WebCache.h"; sourceTree = "<group>"; };
+		000000000390 /* UIButton+WebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+WebCache.m"; path = "SDWebImage/UIButton+WebCache.m"; sourceTree = "<group>"; };
+		0000000003A0 /* UIImage+GIF.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+GIF.h"; path = "SDWebImage/UIImage+GIF.h"; sourceTree = "<group>"; };
+		0000000003B0 /* UIImage+GIF.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+GIF.m"; path = "SDWebImage/UIImage+GIF.m"; sourceTree = "<group>"; };
+		0000000003C0 /* UIImage+MultiFormat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+MultiFormat.h"; path = "SDWebImage/UIImage+MultiFormat.h"; sourceTree = "<group>"; };
+		0000000003D0 /* UIImage+MultiFormat.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+MultiFormat.m"; path = "SDWebImage/UIImage+MultiFormat.m"; sourceTree = "<group>"; };
+		0000000003E0 /* UIImageView+HighlightedWebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+HighlightedWebCache.h"; path = "SDWebImage/UIImageView+HighlightedWebCache.h"; sourceTree = "<group>"; };
+		0000000003F0 /* UIImageView+HighlightedWebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+HighlightedWebCache.m"; path = "SDWebImage/UIImageView+HighlightedWebCache.m"; sourceTree = "<group>"; };
+		000000000400 /* UIImageView+WebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+WebCache.h"; path = "SDWebImage/UIImageView+WebCache.h"; sourceTree = "<group>"; };
+		000000000410 /* UIImageView+WebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+WebCache.m"; path = "SDWebImage/UIImageView+WebCache.m"; sourceTree = "<group>"; };
+		000000000420 /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+WebCacheOperation.h"; path = "SDWebImage/UIView+WebCacheOperation.h"; sourceTree = "<group>"; };
+		000000000430 /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+WebCacheOperation.m"; path = "SDWebImage/UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
+		000000000480 /* libMasonry.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMasonry.a; path = libMasonry.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		000000000660 /* Masonry.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Masonry.xcconfig; sourceTree = "<group>"; };
+		000000000670 /* Masonry-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Masonry-prefix.pch"; sourceTree = "<group>"; };
+		000000000680 /* Masonry-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Masonry-dummy.m"; sourceTree = "<group>"; };
+		0000000006E0 /* libSDWebImage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libSDWebImage.a; path = libSDWebImage.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		000000000900 /* SDWebImage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SDWebImage.xcconfig; sourceTree = "<group>"; };
+		000000000910 /* SDWebImage-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SDWebImage-prefix.pch"; sourceTree = "<group>"; };
+		000000000920 /* SDWebImage-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SDWebImage-dummy.m"; sourceTree = "<group>"; };
+		000000000980 /* libPods-dropDownSecondFloor.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-dropDownSecondFloor.a"; path = "libPods-dropDownSecondFloor.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0000000009D0 /* Pods-dropDownSecondFloor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-dropDownSecondFloor.release.xcconfig"; sourceTree = "<group>"; };
+		0000000009E0 /* Pods-dropDownSecondFloor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-dropDownSecondFloor.debug.xcconfig"; sourceTree = "<group>"; };
+		0000000009F0 /* Pods-dropDownSecondFloor-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-dropDownSecondFloor-acknowledgements.plist"; sourceTree = "<group>"; };
+		000000000A00 /* Pods-dropDownSecondFloor-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-dropDownSecondFloor-acknowledgements.markdown"; sourceTree = "<group>"; };
+		000000000A10 /* Pods-dropDownSecondFloor-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dropDownSecondFloor-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0000000004B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		000000000710 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0000000009B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		000000000010 = {
+			isa = PBXGroup;
+			children = (
+				0000000000C0 /* Podfile */,
+				000000000060 /* Frameworks */,
+				000000000080 /* Pods */,
+				000000000020 /* Products */,
+				000000000070 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		000000000020 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				000000000480 /* libMasonry.a */,
+				000000000980 /* libPods-dropDownSecondFloor.a */,
+				0000000006E0 /* libSDWebImage.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		000000000060 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		000000000070 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0000000009C0 /* Pods-dropDownSecondFloor */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		000000000080 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0000000000A0 /* Masonry */,
+				0000000000B0 /* SDWebImage */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		0000000000A0 /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				0000000000D0 /* MASCompositeConstraint.h */,
+				0000000000E0 /* MASCompositeConstraint.m */,
+				000000000100 /* MASConstraint.h */,
+				000000000110 /* MASConstraint.m */,
+				0000000000F0 /* MASConstraint+Private.h */,
+				000000000120 /* MASConstraintMaker.h */,
+				000000000130 /* MASConstraintMaker.m */,
+				000000000140 /* MASLayoutConstraint.h */,
+				000000000150 /* MASLayoutConstraint.m */,
+				000000000160 /* Masonry.h */,
+				000000000170 /* MASUtilities.h */,
+				000000000180 /* MASViewAttribute.h */,
+				000000000190 /* MASViewAttribute.m */,
+				0000000001A0 /* MASViewConstraint.h */,
+				0000000001B0 /* MASViewConstraint.m */,
+				0000000001C0 /* NSArray+MASAdditions.h */,
+				0000000001D0 /* NSArray+MASAdditions.m */,
+				0000000001E0 /* NSArray+MASShorthandAdditions.h */,
+				0000000001F0 /* NSLayoutConstraint+MASDebugAdditions.h */,
+				000000000200 /* NSLayoutConstraint+MASDebugAdditions.m */,
+				000000000210 /* View+MASAdditions.h */,
+				000000000220 /* View+MASAdditions.m */,
+				000000000230 /* View+MASShorthandAdditions.h */,
+				000000000240 /* ViewController+MASAdditions.h */,
+				000000000250 /* ViewController+MASAdditions.m */,
+				000000000650 /* Support Files */,
+			);
+			name = Masonry;
+			path = Masonry;
+			sourceTree = "<group>";
+		};
+		0000000000B0 /* SDWebImage */ = {
+			isa = PBXGroup;
+			children = (
+				000000000260 /* Core */,
+				0000000008F0 /* Support Files */,
+			);
+			name = SDWebImage;
+			path = SDWebImage;
+			sourceTree = "<group>";
+		};
+		000000000260 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				000000000270 /* NSData+ImageContentType.h */,
+				000000000280 /* NSData+ImageContentType.m */,
+				000000000290 /* SDImageCache.h */,
+				0000000002A0 /* SDImageCache.m */,
+				0000000002B0 /* SDWebImageCompat.h */,
+				0000000002C0 /* SDWebImageCompat.m */,
+				0000000002D0 /* SDWebImageDecoder.h */,
+				0000000002E0 /* SDWebImageDecoder.m */,
+				0000000002F0 /* SDWebImageDownloader.h */,
+				000000000300 /* SDWebImageDownloader.m */,
+				000000000310 /* SDWebImageDownloaderOperation.h */,
+				000000000320 /* SDWebImageDownloaderOperation.m */,
+				000000000330 /* SDWebImageManager.h */,
+				000000000340 /* SDWebImageManager.m */,
+				000000000350 /* SDWebImageOperation.h */,
+				000000000360 /* SDWebImagePrefetcher.h */,
+				000000000370 /* SDWebImagePrefetcher.m */,
+				000000000380 /* UIButton+WebCache.h */,
+				000000000390 /* UIButton+WebCache.m */,
+				0000000003A0 /* UIImage+GIF.h */,
+				0000000003B0 /* UIImage+GIF.m */,
+				0000000003C0 /* UIImage+MultiFormat.h */,
+				0000000003D0 /* UIImage+MultiFormat.m */,
+				0000000003E0 /* UIImageView+HighlightedWebCache.h */,
+				0000000003F0 /* UIImageView+HighlightedWebCache.m */,
+				000000000400 /* UIImageView+WebCache.h */,
+				000000000410 /* UIImageView+WebCache.m */,
+				000000000420 /* UIView+WebCacheOperation.h */,
+				000000000430 /* UIView+WebCacheOperation.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		000000000650 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				000000000660 /* Masonry.xcconfig */,
+				000000000680 /* Masonry-dummy.m */,
+				000000000670 /* Masonry-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Masonry";
+			sourceTree = "<group>";
+		};
+		0000000008F0 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				000000000900 /* SDWebImage.xcconfig */,
+				000000000920 /* SDWebImage-dummy.m */,
+				000000000910 /* SDWebImage-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SDWebImage";
+			sourceTree = "<group>";
+		};
+		0000000009C0 /* Pods-dropDownSecondFloor */ = {
+			isa = PBXGroup;
+			children = (
+				000000000A00 /* Pods-dropDownSecondFloor-acknowledgements.markdown */,
+				0000000009F0 /* Pods-dropDownSecondFloor-acknowledgements.plist */,
+				000000000A10 /* Pods-dropDownSecondFloor-dummy.m */,
+				0000000009E0 /* Pods-dropDownSecondFloor.debug.xcconfig */,
+				0000000009D0 /* Pods-dropDownSecondFloor.release.xcconfig */,
+			);
+			name = "Pods-dropDownSecondFloor";
+			path = "Target Support Files/Pods-dropDownSecondFloor";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		000000000490 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000000000560 /* MASCompositeConstraint.h in Headers */,
+				000000000570 /* MASConstraint+Private.h in Headers */,
+				000000000580 /* MASConstraint.h in Headers */,
+				000000000590 /* MASConstraintMaker.h in Headers */,
+				0000000005A0 /* MASLayoutConstraint.h in Headers */,
+				0000000005B0 /* Masonry.h in Headers */,
+				0000000005C0 /* MASUtilities.h in Headers */,
+				0000000005D0 /* MASViewAttribute.h in Headers */,
+				0000000005E0 /* MASViewConstraint.h in Headers */,
+				0000000005F0 /* NSArray+MASAdditions.h in Headers */,
+				000000000600 /* NSArray+MASShorthandAdditions.h in Headers */,
+				000000000610 /* NSLayoutConstraint+MASDebugAdditions.h in Headers */,
+				000000000620 /* View+MASAdditions.h in Headers */,
+				000000000630 /* View+MASShorthandAdditions.h in Headers */,
+				000000000640 /* ViewController+MASAdditions.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0000000006F0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000000000800 /* NSData+ImageContentType.h in Headers */,
+				000000000810 /* SDImageCache.h in Headers */,
+				000000000820 /* SDWebImageCompat.h in Headers */,
+				000000000830 /* SDWebImageDecoder.h in Headers */,
+				000000000840 /* SDWebImageDownloader.h in Headers */,
+				000000000850 /* SDWebImageDownloaderOperation.h in Headers */,
+				000000000860 /* SDWebImageManager.h in Headers */,
+				000000000870 /* SDWebImageOperation.h in Headers */,
+				000000000880 /* SDWebImagePrefetcher.h in Headers */,
+				000000000890 /* UIButton+WebCache.h in Headers */,
+				0000000008A0 /* UIImage+GIF.h in Headers */,
+				0000000008B0 /* UIImage+MultiFormat.h in Headers */,
+				0000000008C0 /* UIImageView+HighlightedWebCache.h in Headers */,
+				0000000008D0 /* UIImageView+WebCache.h in Headers */,
+				0000000008E0 /* UIView+WebCacheOperation.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		000000000990 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		000000000440 /* Masonry */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 000000000450 /* Build configuration list for PBXNativeTarget "Masonry" */;
+			buildPhases = (
+				000000000490 /* Headers */,
+				0000000004A0 /* Sources */,
+				0000000004B0 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Masonry;
+			productName = Masonry;
+			productReference = 000000000480 /* libMasonry.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		0000000006A0 /* SDWebImage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0000000006B0 /* Build configuration list for PBXNativeTarget "SDWebImage" */;
+			buildPhases = (
+				0000000006F0 /* Headers */,
+				000000000700 /* Sources */,
+				000000000710 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SDWebImage;
+			productName = SDWebImage;
+			productReference = 0000000006E0 /* libSDWebImage.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		000000000940 /* Pods-dropDownSecondFloor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 000000000950 /* Build configuration list for PBXNativeTarget "Pods-dropDownSecondFloor" */;
+			buildPhases = (
+				000000000990 /* Headers */,
+				0000000009A0 /* Sources */,
+				0000000009B0 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				000000000A40 /* PBXTargetDependency */,
+				000000000A60 /* PBXTargetDependency */,
+			);
+			name = "Pods-dropDownSecondFloor";
+			productName = "Pods-dropDownSecondFloor";
+			productReference = 000000000980 /* libPods-dropDownSecondFloor.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		000000000000 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 000000000030 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 000000000010;
+			productRefGroup = 000000000020 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				000000000440 /* Masonry */,
+				000000000940 /* Pods-dropDownSecondFloor */,
+				0000000006A0 /* SDWebImage */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0000000004A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0000000004C0 /* MASCompositeConstraint.m in Sources */,
+				0000000004D0 /* MASConstraint.m in Sources */,
+				0000000004E0 /* MASConstraintMaker.m in Sources */,
+				0000000004F0 /* MASLayoutConstraint.m in Sources */,
+				000000000690 /* Masonry-dummy.m in Sources */,
+				000000000500 /* MASViewAttribute.m in Sources */,
+				000000000510 /* MASViewConstraint.m in Sources */,
+				000000000520 /* NSArray+MASAdditions.m in Sources */,
+				000000000530 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				000000000540 /* View+MASAdditions.m in Sources */,
+				000000000550 /* ViewController+MASAdditions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		000000000700 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000000000720 /* NSData+ImageContentType.m in Sources */,
+				000000000730 /* SDImageCache.m in Sources */,
+				000000000930 /* SDWebImage-dummy.m in Sources */,
+				000000000740 /* SDWebImageCompat.m in Sources */,
+				000000000750 /* SDWebImageDecoder.m in Sources */,
+				000000000760 /* SDWebImageDownloader.m in Sources */,
+				000000000770 /* SDWebImageDownloaderOperation.m in Sources */,
+				000000000780 /* SDWebImageManager.m in Sources */,
+				000000000790 /* SDWebImagePrefetcher.m in Sources */,
+				0000000007A0 /* UIButton+WebCache.m in Sources */,
+				0000000007B0 /* UIImage+GIF.m in Sources */,
+				0000000007C0 /* UIImage+MultiFormat.m in Sources */,
+				0000000007D0 /* UIImageView+HighlightedWebCache.m in Sources */,
+				0000000007E0 /* UIImageView+WebCache.m in Sources */,
+				0000000007F0 /* UIView+WebCacheOperation.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0000000009A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000000000A20 /* Pods-dropDownSecondFloor-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		000000000A40 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Masonry;
+			target = 000000000440 /* Masonry */;
+			targetProxy = 000000000A30 /* PBXContainerItemProxy */;
+		};
+		000000000A60 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SDWebImage;
+			target = 0000000006A0 /* SDWebImage */;
+			targetProxy = 000000000A50 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		000000000040 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		000000000050 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		000000000460 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 000000000660 /* Masonry.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/Masonry/Masonry-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = Masonry;
+				PRODUCT_NAME = Masonry;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		000000000470 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 000000000660 /* Masonry.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/Masonry/Masonry-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = Masonry;
+				PRODUCT_NAME = Masonry;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0000000006C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 000000000900 /* SDWebImage.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/SDWebImage/SDWebImage-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = SDWebImage;
+				PRODUCT_NAME = SDWebImage;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0000000006D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 000000000900 /* SDWebImage.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/SDWebImage/SDWebImage-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = SDWebImage;
+				PRODUCT_NAME = SDWebImage;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		000000000960 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0000000009D0 /* Pods-dropDownSecondFloor.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		000000000970 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0000000009E0 /* Pods-dropDownSecondFloor.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		000000000030 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				000000000040 /* Debug */,
+				000000000050 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		000000000450 /* Build configuration list for PBXNativeTarget "Masonry" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				000000000470 /* Debug */,
+				000000000460 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0000000006B0 /* Build configuration list for PBXNativeTarget "SDWebImage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0000000006D0 /* Debug */,
+				0000000006C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		000000000950 /* Build configuration list for PBXNativeTarget "Pods-dropDownSecondFloor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				000000000970 /* Debug */,
+				000000000960 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 000000000000 /* Project object */;
+}

@@ -1,0 +1,431 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4D59E22D22168C0600135145 /* UIView+HHAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D59E22C22168C0600135145 /* UIView+HHAddition.m */; };
+		4D59E2322216A66100135145 /* UIScrollView+FixXcodeNine.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D59E22E2216A66100135145 /* UIScrollView+FixXcodeNine.m */; };
+		4D59E2332216A66100135145 /* UITableView+FixXcodeNine.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D59E2302216A66100135145 /* UITableView+FixXcodeNine.m */; };
+		4D59E236221A8F1000135145 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D59E235221A8F1000135145 /* WebViewController.m */; };
+		4DAB2EE022140EFC00137515 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DAB2EDF22140EFC00137515 /* AppDelegate.m */; };
+		4DAB2EE322140EFC00137515 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DAB2EE222140EFC00137515 /* ViewController.m */; };
+		4DAB2EE622140EFC00137515 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DAB2EE422140EFC00137515 /* Main.storyboard */; };
+		4DAB2EE822140EFD00137515 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DAB2EE722140EFD00137515 /* Assets.xcassets */; };
+		4DAB2EEB22140EFD00137515 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DAB2EE922140EFD00137515 /* LaunchScreen.storyboard */; };
+		4DAB2EEE22140EFD00137515 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DAB2EED22140EFD00137515 /* main.m */; };
+		4DD13A792215517E002F8575 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DD13A782215517E002F8575 /* MainViewController.m */; };
+		4DD13A7C2215578A002F8575 /* DropDownSecondFloorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DD13A7B2215578A002F8575 /* DropDownSecondFloorView.m */; };
+		FB1FCF0E933AFE1ECF9D4C6F /* libPods-dropDownSecondFloor.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F5FE7957760331E2577AA1A0 /* libPods-dropDownSecondFloor.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		01BF407AD1011A06D60D42B1 /* Pods-dropDownSecondFloor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dropDownSecondFloor.debug.xcconfig"; path = "Target Support Files/Pods-dropDownSecondFloor/Pods-dropDownSecondFloor.debug.xcconfig"; sourceTree = "<group>"; };
+		4D59E22B22168C0600135145 /* UIView+HHAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+HHAddition.h"; sourceTree = "<group>"; };
+		4D59E22C22168C0600135145 /* UIView+HHAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HHAddition.m"; sourceTree = "<group>"; };
+		4D59E22E2216A66100135145 /* UIScrollView+FixXcodeNine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+FixXcodeNine.m"; sourceTree = "<group>"; };
+		4D59E22F2216A66100135145 /* UITableView+FixXcodeNine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+FixXcodeNine.h"; sourceTree = "<group>"; };
+		4D59E2302216A66100135145 /* UITableView+FixXcodeNine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+FixXcodeNine.m"; sourceTree = "<group>"; };
+		4D59E2312216A66100135145 /* UIScrollView+FixXcodeNine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+FixXcodeNine.h"; sourceTree = "<group>"; };
+		4D59E234221A8F1000135145 /* WebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		4D59E235221A8F1000135145 /* WebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		4DAB2EDB22140EFC00137515 /* dropDownSecondFloor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dropDownSecondFloor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DAB2EDE22140EFC00137515 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4DAB2EDF22140EFC00137515 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4DAB2EE122140EFC00137515 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		4DAB2EE222140EFC00137515 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		4DAB2EE522140EFC00137515 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4DAB2EE722140EFD00137515 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4DAB2EEA22140EFD00137515 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4DAB2EEC22140EFD00137515 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DAB2EED22140EFD00137515 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4DD13A772215517E002F8575 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		4DD13A782215517E002F8575 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		4DD13A7A2215578A002F8575 /* DropDownSecondFloorView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DropDownSecondFloorView.h; sourceTree = "<group>"; };
+		4DD13A7B2215578A002F8575 /* DropDownSecondFloorView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DropDownSecondFloorView.m; sourceTree = "<group>"; };
+		DAD1A77DE057411F8C07F0BA /* Pods-dropDownSecondFloor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dropDownSecondFloor.release.xcconfig"; path = "Target Support Files/Pods-dropDownSecondFloor/Pods-dropDownSecondFloor.release.xcconfig"; sourceTree = "<group>"; };
+		F5FE7957760331E2577AA1A0 /* libPods-dropDownSecondFloor.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-dropDownSecondFloor.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4DAB2ED822140EFC00137515 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB1FCF0E933AFE1ECF9D4C6F /* libPods-dropDownSecondFloor.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4DAB2ED222140EFC00137515 = {
+			isa = PBXGroup;
+			children = (
+				4DAB2EDD22140EFC00137515 /* dropDownSecondFloor */,
+				4DAB2EDC22140EFC00137515 /* Products */,
+				E19E8EA830E5D4E20D9BEB21 /* Pods */,
+				9B49F6FED021F7B384CB458B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4DAB2EDC22140EFC00137515 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4DAB2EDB22140EFC00137515 /* dropDownSecondFloor.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4DAB2EDD22140EFC00137515 /* dropDownSecondFloor */ = {
+			isa = PBXGroup;
+			children = (
+				4DAB2EDE22140EFC00137515 /* AppDelegate.h */,
+				4DAB2EDF22140EFC00137515 /* AppDelegate.m */,
+				4DAB2EE122140EFC00137515 /* ViewController.h */,
+				4DAB2EE222140EFC00137515 /* ViewController.m */,
+				4DD13A772215517E002F8575 /* MainViewController.h */,
+				4DD13A782215517E002F8575 /* MainViewController.m */,
+				4D59E234221A8F1000135145 /* WebViewController.h */,
+				4D59E235221A8F1000135145 /* WebViewController.m */,
+				4D59E22B22168C0600135145 /* UIView+HHAddition.h */,
+				4D59E22C22168C0600135145 /* UIView+HHAddition.m */,
+				4D59E2312216A66100135145 /* UIScrollView+FixXcodeNine.h */,
+				4D59E22E2216A66100135145 /* UIScrollView+FixXcodeNine.m */,
+				4D59E22F2216A66100135145 /* UITableView+FixXcodeNine.h */,
+				4D59E2302216A66100135145 /* UITableView+FixXcodeNine.m */,
+				4DD13A7A2215578A002F8575 /* DropDownSecondFloorView.h */,
+				4DD13A7B2215578A002F8575 /* DropDownSecondFloorView.m */,
+				4DAB2EE422140EFC00137515 /* Main.storyboard */,
+				4DAB2EE722140EFD00137515 /* Assets.xcassets */,
+				4DAB2EE922140EFD00137515 /* LaunchScreen.storyboard */,
+				4DAB2EEC22140EFD00137515 /* Info.plist */,
+				4DAB2EED22140EFD00137515 /* main.m */,
+			);
+			path = dropDownSecondFloor;
+			sourceTree = "<group>";
+		};
+		9B49F6FED021F7B384CB458B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F5FE7957760331E2577AA1A0 /* libPods-dropDownSecondFloor.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E19E8EA830E5D4E20D9BEB21 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				01BF407AD1011A06D60D42B1 /* Pods-dropDownSecondFloor.debug.xcconfig */,
+				DAD1A77DE057411F8C07F0BA /* Pods-dropDownSecondFloor.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4DAB2EDA22140EFC00137515 /* dropDownSecondFloor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DAB2EF122140EFD00137515 /* Build configuration list for PBXNativeTarget "dropDownSecondFloor" */;
+			buildPhases = (
+				653B54B0783769172754AEEC /* [CP] Check Pods Manifest.lock */,
+				4DAB2ED722140EFC00137515 /* Sources */,
+				4DAB2ED822140EFC00137515 /* Frameworks */,
+				4DAB2ED922140EFC00137515 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = dropDownSecondFloor;
+			productName = dropDownSecondFloor;
+			productReference = 4DAB2EDB22140EFC00137515 /* dropDownSecondFloor.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4DAB2ED322140EFC00137515 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				TargetAttributes = {
+					4DAB2EDA22140EFC00137515 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 4DAB2ED622140EFC00137515 /* Build configuration list for PBXProject "dropDownSecondFloor" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4DAB2ED222140EFC00137515;
+			productRefGroup = 4DAB2EDC22140EFC00137515 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4DAB2EDA22140EFC00137515 /* dropDownSecondFloor */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4DAB2ED922140EFC00137515 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DAB2EEB22140EFD00137515 /* LaunchScreen.storyboard in Resources */,
+				4DAB2EE822140EFD00137515 /* Assets.xcassets in Resources */,
+				4DAB2EE622140EFC00137515 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		653B54B0783769172754AEEC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-dropDownSecondFloor-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4DAB2ED722140EFC00137515 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D59E22D22168C0600135145 /* UIView+HHAddition.m in Sources */,
+				4D59E2322216A66100135145 /* UIScrollView+FixXcodeNine.m in Sources */,
+				4DD13A7C2215578A002F8575 /* DropDownSecondFloorView.m in Sources */,
+				4DAB2EE322140EFC00137515 /* ViewController.m in Sources */,
+				4D59E236221A8F1000135145 /* WebViewController.m in Sources */,
+				4DAB2EEE22140EFD00137515 /* main.m in Sources */,
+				4D59E2332216A66100135145 /* UITableView+FixXcodeNine.m in Sources */,
+				4DAB2EE022140EFC00137515 /* AppDelegate.m in Sources */,
+				4DD13A792215517E002F8575 /* MainViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4DAB2EE422140EFC00137515 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4DAB2EE522140EFC00137515 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4DAB2EE922140EFD00137515 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4DAB2EEA22140EFD00137515 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4DAB2EEF22140EFD00137515 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4DAB2EF022140EFD00137515 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4DAB2EF222140EFD00137515 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01BF407AD1011A06D60D42B1 /* Pods-dropDownSecondFloor.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DAW493MYAY;
+				INFOPLIST_FILE = dropDownSecondFloor/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rengfou.dropDownSecondFloor.dropDownSecondFloor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4DAB2EF322140EFD00137515 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DAD1A77DE057411F8C07F0BA /* Pods-dropDownSecondFloor.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DAW493MYAY;
+				INFOPLIST_FILE = dropDownSecondFloor/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rengfou.dropDownSecondFloor.dropDownSecondFloor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4DAB2ED622140EFC00137515 /* Build configuration list for PBXProject "dropDownSecondFloor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DAB2EEF22140EFD00137515 /* Debug */,
+				4DAB2EF022140EFD00137515 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4DAB2EF122140EFD00137515 /* Build configuration list for PBXNativeTarget "dropDownSecondFloor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DAB2EF222140EFD00137515 /* Debug */,
+				4DAB2EF322140EFD00137515 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4DAB2ED322140EFC00137515 /* Project object */;
+}

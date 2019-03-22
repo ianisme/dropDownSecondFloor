@@ -1,0 +1,22 @@
+PODS:
+  - Masonry (0.6.4)
+  - SDWebImage (3.7.0):
+    - SDWebImage/Core (= 3.7.0)
+  - SDWebImage/Core (3.7.0)
+
+DEPENDENCIES:
+  - Masonry (= 0.6.4)
+  - SDWebImage (= 3.7.0)
+
+SPEC REPOS:
+  https://code.ziroom.com/wireless-architect-ios/ZROtherMoudleSpec.git:
+    - Masonry
+    - SDWebImage
+
+SPEC CHECKSUMS:
+  Masonry: 1b2a42b3109920e7656133d46cb73a5bcac7c48d
+  SDWebImage: 4ee8d5e26bd94e8602e3d29d2e0232c1b4aef4ac
+
+PODFILE CHECKSUM: 2535a69b836cb1434d144546269640bf82e30f0d
+
+COCOAPODS: 1.6.0

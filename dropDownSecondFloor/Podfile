@@ -1,0 +1,13 @@
+install! 'cocoapods', :deterministic_uuids => false
+
+source 'https://code.ziroom.com/wireless-architect-ios/ZROtherMoudleSpec.git'
+
+platform :ios, '8.0'
+
+target 'dropDownSecondFloor' do
+
+pod 'Masonry', '0.6.4'
+pod 'SDWebImage', '3.7.0'
+
+end
+
